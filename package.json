@@ -1,0 +1,20 @@
+{
+  "name": "zorelle-reviews-lite",
+  "private": true,
+  "type": "module",
+  "description": "Zorelle product reviews without an installed app or database: Netlify Functions that verify a theme-signed customer, check the purchase and save reviews as Shopify metaobjects.",
+  "scripts": {
+    "setup": "node --env-file=.env scripts/setup.mts",
+    "recalculate": "node --env-file=.env scripts/recalculate.mts",
+    "typecheck": "tsc --noEmit",
+    "dev": "netlify dev"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^2.8.2",
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}

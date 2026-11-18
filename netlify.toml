@@ -1,0 +1,7 @@
+[build]
+  # Functions only: no site to build.
+  publish = "public"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"

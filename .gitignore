@@ -1,0 +1,11 @@
+# Secrets: never commit. Set them in Netlify (Site configuration > Environment variables).
+.env
+.env.*
+!.env.example
+
+node_modules
+.netlify
+.DS_Store
+
+# Local review backups (contain customer names): never commit
+backup/
